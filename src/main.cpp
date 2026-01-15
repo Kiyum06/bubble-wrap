@@ -17,6 +17,14 @@ int main() {
             bn::backdrop::set_color(bn::color(31, 0, 0));
         }
 
+        if (bn::keypad::left_released()) {
+            bn::backdrop::set_color(bn::color(0, 0, 15));
+        }
+
+        if (bn::keypad::right_released()) {
+            bn::backdrop::set_color(bn::color(31, 31, 0));
+        }
+
         bn::core::update();
     }
 
