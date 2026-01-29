@@ -26,6 +26,9 @@ int main() {
     // bn::sprite_ptr myCircle8 = bn::sprite_items::dot.create_sprite(30, 40);
     // bn::sprite_ptr myCircle9 = bn::sprite_items::dot.create_sprite(40, 40);
 
+    // bn::sprite_ptr myCircle9 = bn::sprite_items::dot.create_sprite(50, -50);
+    // bn::sprite_ptr myCircle9 = bn::sprite_items::dot.create_sprite(-50, -50);
+
 
     bn::vector<bn::sprite_ptr, 14> circles = {};
     for(int x = -60; x <= 60; x += 10) {
@@ -36,7 +39,21 @@ int main() {
     
 
 
-    
+    circles[0].set_vertical_scale(2.5);
+    circles[0].set_rotation_angle(1.5);
+    circles[1].set_scale(0.2);
+    circles[2].set_scale(0.2);
+    circles[3].set_scale(0.2);
+    circles[4].set_scale(0.2);
+    circles[5].set_scale(0.2);
+    circles[6].set_scale(0.2);
+    circles[7].set_scale(0.2);
+    circles[8].set_scale(0.2);
+    circles[9].set_scale(0.2);
+    circles[10].set_scale(0.2);
+    circles[11].set_scale(0.2);
+    circles[12].set_vertical_scale(2.5);
+    circles[12].set_rotation_angle(1.5);
 
 
     while(true) {
